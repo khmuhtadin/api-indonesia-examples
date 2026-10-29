@@ -1,0 +1,61 @@
+# API Indonesia examples
+
+Code examples for [API Indonesia](https://apiindonesia.id), a REST API and MCP server for Indonesian public data, built by Khaisa Studio (Khairul Muhtadin).
+
+- Website: https://apiindonesia.id
+- Docs: https://docs.apiindonesia.id
+- OpenAPI spec: https://apiindonesia.id/openapi.json
+- Base URL: `https://use.apiindonesia.id/api/v1`
+- MCP server (streamable HTTP): `https://mcp.apiindonesia.id/mcp` (official MCP Registry name `id.apiindonesia/api-indonesia`)
+- Dashboard (get an API key): https://dashboard.apiindonesia.id
+- RapidAPI: https://rapidapi.com/contactmuhtadin/api/api-indonesia
+- Postman workspace: https://www.postman.com/contactmuhtadin-185774/api-indonesia/overview
+- n8n community node: [`n8n-nodes-api-indonesia`](https://www.npmjs.com/package/n8n-nodes-api-indonesia)
+
+## What's in the API
+
+30 API products, including:
+
+- Wilayah: 38 provinsi, 514 kabupaten/kota, 7,285 kecamatan, 83,762 desa/kelurahan (Kemendagri codes)
+- Kode pos: 83,762 records mapped per desa/kelurahan
+- Hari libur nasional and cuti bersama
+- Jadwal sholat per kabupaten/kota
+- BMKG: gempa terkini, cuaca, peringatan dini
+- Sekolah (93,500+ by NPSN), perguruan tinggi (4,600+), rumah sakit (2,900+)
+- UMP 1997 to 2026 (all 38 provinces for 2026)
+- Kurs, Bank Indonesia exchange rates, Al-Quran, Alkitab, KBBI, plat nomor, halal, BPOM, hijriah, validasi NIK/NPWP/rekening bank, and Rupiah/QRIS utilities
+
+The full endpoint list is in the [OpenAPI spec](https://apiindonesia.id/openapi.json).
+
+## Pricing
+
+There is no monthly free tier. New accounts get a one-time 3,000 credit signup bonus (1 credit = Rp1), no credit card needed. A successful data request costs 2 credits (Rp2); failed requests are not charged.
+
+## Authentication
+
+Send your key in the `x-api-key` header:
+
+```bash
+curl -H "x-api-key: YOUR_API_KEY" https://use.apiindonesia.id/api/v1/wilayah/provinsi
+```
+
+The MCP server takes the same key as a bearer token: `Authorization: Bearer YOUR_API_KEY`.
+
+Never commit a real key. The examples read it from the `API_INDONESIA_KEY` environment variable.
+
+## Examples
+
+| Folder | What it shows |
+|---|---|
+| [examples/curl](examples/curl) | Shell requests for wilayah, kode pos, hari libur, jadwal sholat, gempa |
+| [examples/javascript](examples/javascript) | `fetch` (Node 18+ or browser) |
+| [examples/python](examples/python) | `requests` |
+| [examples/php](examples/php) | cURL extension, no dependencies |
+| [examples/n8n](examples/n8n) | Using the n8n community node |
+| [examples/mcp](examples/mcp) | Claude Desktop and Cursor config for the MCP server |
+
+[`server.json`](server.json) is the same entry published to the official MCP Registry.
+
+## License
+
+MIT for the code in this repository. Data returned by the API comes from its original public sources; see https://apiindonesia.id for details.

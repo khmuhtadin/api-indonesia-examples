@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "id.apiindonesia/api-indonesia",
+  "description": "Indonesian public data: regions, postal codes, holidays, prayer times, BMKG, schools, wages",
+  "title": "API Indonesia",
+  "version": "0.1.0",
+  "websiteUrl": "https://apiindonesia.id",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apiindonesia.id/mcp",
+      "headers": [
+        {
+          "description": "Bearer token with your API Indonesia key (Bearer aip_live_...). Get a key at https://dashboard.apiindonesia.id",
+          "isRequired": true,
+          "isSecret": true,
+          "name": "Authorization"
+        }
+      ]
+    }
+  ]
+}

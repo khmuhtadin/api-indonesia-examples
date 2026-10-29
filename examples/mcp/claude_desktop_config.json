@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "api-indonesia": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.apiindonesia.id/mcp",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer YOUR_API_KEY"
+      }
+    }
+  }
+}
