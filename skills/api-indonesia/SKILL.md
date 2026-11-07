@@ -34,16 +34,12 @@ Pricing: a successful request costs 2 credits (Rp2). Failed requests (bad input,
 {"mcpServers": {"api-indonesia": {"url": "https://mcp.apiindonesia.id/mcp", "headers": {"Authorization": "Bearer ${API_INDONESIA_KEY}"}}}}
 ```
 
-On macOS or Linux with Node.js 18+, the installer adds the server to every local agent it finds (Claude Code, Codex, Cursor, VS Code, opencode, Gemini CLI, Windsurf, Zed, Claude Desktop):
-
-```sh
-curl -fsSL https://apiindonesia.id/install.sh | sh -s -- --key "$API_INDONESIA_KEY"
-```
+To add the server to other local agents (Claude Code, Codex, Cursor, VS Code, opencode, Gemini CLI, Windsurf, Zed, Claude Desktop), the human can run the installer described at https://docs.apiindonesia.id . It needs macOS or Linux with Node.js 18+.
 
 **REST.** Base URL `https://use.apiindonesia.id`, header `x-api-key: <API key>`.
 
 ```sh
-curl -s "https://use.apiindonesia.id/api/v1/libur/upcoming" -H "x-api-key: $API_INDONESIA_KEY"
+curl -s "https://use.apiindonesia.id/api/v1/libur/upcoming" -H "x-api-key: <API key>"
 ```
 
 Full reference: https://apiindonesia.id/openapi.json (OpenAPI 3.1) and https://apiindonesia.id/llms-full.txt.

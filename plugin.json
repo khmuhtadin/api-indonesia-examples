@@ -10,5 +10,25 @@
   "homepage": "https://apiindonesia.id",
   "repository": "https://github.com/khmuhtadin/api-indonesia-examples",
   "license": "MIT",
-  "keywords": ["indonesia", "public-data", "wilayah", "kodepos", "holidays", "bmkg", "mcp"]
+  "keywords": [
+    "indonesia",
+    "public-data",
+    "wilayah",
+    "kodepos",
+    "holidays",
+    "bmkg",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "config_schema": {
+        "api_key": {
+          "type": "secret",
+          "env": "API_INDONESIA_KEY",
+          "label": "API Indonesia key",
+          "description": "An aip_live_ key from https://dashboard.apiindonesia.id (API Keys). Sent to mcp.apiindonesia.id as a bearer token."
+        }
+      }
+    }
+  }
 }

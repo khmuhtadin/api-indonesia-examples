@@ -25,9 +25,17 @@ This repo is also an installable agent package:
 ```sh
 echo 'API_INDONESIA_KEY=aip_live_xxx' >> ~/.hermes/.env
 hermes plugins install https://github.com/khmuhtadin/api-indonesia-examples
+hermes plugins enable api-indonesia
 ```
 
-Every tool call goes to API Indonesia's hosted server (`mcp.apiindonesia.id`) and spends credits from the account that owns the key (Rp2 per successful call; failed calls are free).
+Portable packages stay disabled until you enable them. In Hermes Desktop you can also paste the key in the plugin's settings form instead of editing `.env`. Start a new session (or run `/reload-mcp`) and the `api-indonesia` MCP tools are available, along with the `api-indonesia:api-indonesia` skill.
+
+Disclosure:
+
+- Every tool call, with its arguments, goes to API Indonesia's hosted server (`mcp.apiindonesia.id`). The tool list is served by that server at runtime.
+- Each successful call spends 2 credits (Rp2) from the account that owns the key. Failed calls are free.
+- The key is read from `API_INDONESIA_KEY` in your Hermes profile `.env` and sent as an `Authorization: Bearer` header. The package has no local code, runs no shell commands and stores nothing.
+- All tools are read-only lookups (data queries, format checks and calculators). None of them change anything in your API Indonesia account.
 
 ## What's in the API
 
