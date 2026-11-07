@@ -12,6 +12,23 @@ Code examples for [API Indonesia](https://apiindonesia.id), a REST API and MCP s
 - Postman workspace: https://www.postman.com/contactmuhtadin-185774/api-indonesia/overview
 - n8n community node: [`n8n-nodes-api-indonesia`](https://www.npmjs.com/package/n8n-nodes-api-indonesia)
 
+## Agent skill and plugin
+
+This repo is also an installable agent package:
+
+- **Agent skill** at [`skills/api-indonesia/SKILL.md`](skills/api-indonesia/SKILL.md). Install it into Claude Code, Codex, Cursor and other agents with `npx skills add khmuhtadin/api-indonesia-examples`.
+- **MCP config** in [`mcp.json`](mcp.json) (Agent Plugins v1) and [`.mcp.json`](.mcp.json) (Claude Code). Both read your key from the `API_INDONESIA_KEY` environment variable.
+- **Plugin manifest** in [`plugin.json`](plugin.json) and [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json).
+
+### Install in Hermes Agent
+
+```sh
+echo 'API_INDONESIA_KEY=aip_live_xxx' >> ~/.hermes/.env
+hermes plugins install https://github.com/khmuhtadin/api-indonesia-examples
+```
+
+Every tool call goes to API Indonesia's hosted server (`mcp.apiindonesia.id`) and spends credits from the account that owns the key (Rp2 per successful call; failed calls are free).
+
 ## What's in the API
 
 30 API products, including:

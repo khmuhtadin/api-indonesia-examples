@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "api-indonesia",
+  "version": "1.0.0",
+  "description": "Indonesian public data for AI agents: regions down to villages, postal codes, holidays, prayer times, BMKG, schools, hospitals, exchange rates, minimum wage, halal/BPOM, trademarks and more, through API Indonesia's remote MCP server.",
+  "author": {
+    "name": "Khaisa Studio",
+    "url": "https://apiindonesia.id"
+  },
+  "homepage": "https://apiindonesia.id",
+  "repository": "https://github.com/khmuhtadin/api-indonesia-examples",
+  "license": "MIT",
+  "keywords": ["indonesia", "public-data", "wilayah", "kodepos", "holidays", "bmkg", "mcp"]
+}

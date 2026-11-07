@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "api-indonesia": {
+      "type": "http",
+      "url": "https://mcp.apiindonesia.id/mcp",
+      "headers": {
+        "Authorization": "Bearer ${API_INDONESIA_KEY}"
+      }
+    }
+  }
+}
