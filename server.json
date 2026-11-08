@@ -3,7 +3,7 @@
   "name": "id.apiindonesia/api-indonesia",
   "description": "Indonesian public data: regions, postal codes, holidays, prayer times, BMKG, schools, wages",
   "title": "API Indonesia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://apiindonesia.id",
   "remotes": [
     {
@@ -11,8 +11,8 @@
       "url": "https://mcp.apiindonesia.id/mcp",
       "headers": [
         {
-          "description": "Bearer token with your API Indonesia key (Bearer aip_live_...). Get a key at https://dashboard.apiindonesia.id",
-          "isRequired": true,
+          "description": "Optional. Bearer token with your API Indonesia key (Bearer aip_live_...). Leave it out to sign in with OAuth instead. Get a key at https://dashboard.apiindonesia.id",
+          "isRequired": false,
           "isSecret": true,
           "name": "Authorization"
         }
