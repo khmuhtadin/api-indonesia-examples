@@ -55,7 +55,7 @@ Full reference: https://apiindonesia.id/openapi.json (OpenAPI 3.1) and https://a
 | Prayer times | `/sholat/list-kota`, `/sholat?kabupaten_id=&tanggal=`, `/sholat/monthly` |
 | Hijri calendar | `/hijriah/konversi`, `/hijriah/kalender` |
 | Schools, universities, hospitals | `/sekolah/search?q=`, `/sekolah/{npsn}`, `/kampus/search`, `/rumah-sakit/search` |
-| BMKG | `/gempa/terkini`, `/gempa/dirasakan`, `/cuaca?adm4=` or `?kabupaten_id=`, `/peringatan-dini`, `/kualitas-udara/{city}` |
+| BMKG | `/gempa/terkini`, `/gempa/dirasakan`, `/cuaca?adm4=<village code>`, `/peringatan-dini`, `/kualitas-udara/{city}` |
 | Exchange rates | `/kurs-bi/latest`, `/kurs-bi/history`, `/kurs/latest` |
 | Minimum wage | `/ump`, `/ump/{province_code}/{year}` |
 | Validation (POST) | `/validasi/nik`, `/validasi/npwp`; bank list `/validasi/bank` |
