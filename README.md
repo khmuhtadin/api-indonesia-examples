@@ -11,6 +11,7 @@ Code examples for [API Indonesia](https://apiindonesia.id), a REST API and MCP s
 - RapidAPI: https://rapidapi.com/contactmuhtadin/api/api-indonesia
 - Postman workspace: https://www.postman.com/contactmuhtadin-185774/api-indonesia/overview
 - n8n community node: [`n8n-nodes-api-indonesia`](https://www.npmjs.com/package/n8n-nodes-api-indonesia)
+- Command-line client: [`api-indonesia-cli`](https://github.com/khmuhtadin/api-indonesia-cli) (`npx -y github:khmuhtadin/api-indonesia-cli --help`)
 
 ## Agent skill and plugin
 
