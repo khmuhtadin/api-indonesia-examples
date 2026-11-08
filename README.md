@@ -47,7 +47,7 @@ Disclosure:
 - Hari libur nasional and cuti bersama
 - Jadwal sholat per kabupaten/kota
 - BMKG: gempa terkini, cuaca, peringatan dini
-- Sekolah (93,500+ by NPSN), perguruan tinggi (4,600+), rumah sakit (2,900+)
+- Sekolah (93,500+ by NPSN), perguruan tinggi (4,200+), rumah sakit (2,900+)
 - UMP 1997 to 2026 (all 38 provinces for 2026)
 - Kurs, Bank Indonesia exchange rates, Al-Quran, Alkitab, KBBI, plat nomor, halal, BPOM, hijriah, validasi NIK/NPWP/rekening bank, and Rupiah/QRIS utilities
 
