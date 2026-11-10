@@ -2,10 +2,18 @@
   "name": "api-indonesia",
   "description": "Indonesian public data for AI agents: regions, postal codes, holidays, prayer times, BMKG, schools, hospitals, exchange rates, minimum wage, halal/BPOM, trademarks and more.",
   "version": "1.0.0",
-  "author": {"name": "Khaisa Studio", "url": "https://apiindonesia.id"},
+  "author": {
+    "name": "Khaisa Studio",
+    "url": "https://apiindonesia.id"
+  },
   "homepage": "https://apiindonesia.id",
   "repository": "https://github.com/khmuhtadin/api-indonesia-examples",
+  "privacyPolicyUrl": "https://apiindonesia.id/privacy/",
   "license": "MIT",
-  "keywords": ["indonesia", "public-data", "mcp"],
+  "keywords": [
+    "indonesia",
+    "public-data",
+    "mcp"
+  ],
   "icon": "assets/icon.svg"
 }

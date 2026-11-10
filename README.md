@@ -21,6 +21,15 @@ This repo is also an installable agent package:
 - **MCP config** in [`mcp.json`](mcp.json) (Agent Plugins v1) and [`.mcp.json`](.mcp.json) (Claude Code). Both read your key from the `API_INDONESIA_KEY` environment variable.
 - **Plugin manifest** in [`plugin.json`](plugin.json) and [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json).
 
+### Install in Claude Code
+
+```sh
+/plugin marketplace add khmuhtadin/api-indonesia-examples
+/plugin install api-indonesia --marketplace khmuhtadin/api-indonesia-examples
+```
+
+The plugin adds the `api-indonesia` MCP server (`https://mcp.apiindonesia.id/mcp`, 84 tools) plus the `api-indonesia` skill. Sign in with OAuth when Claude Code prompts you, or export `API_INDONESIA_KEY` with a key from https://dashboard.apiindonesia.id before you start a session.
+
 ### Install in Hermes Agent
 
 ```sh
@@ -99,6 +108,14 @@ Never commit a real key. The examples read it from the `API_INDONESIA_KEY` envir
 | [examples/mcp](examples/mcp) | Claude Desktop and Cursor config for the MCP server |
 
 [`server.json`](server.json) is the same entry published to the official MCP Registry.
+
+## Privacy and support
+
+- Privacy policy: https://apiindonesia.id/privacy/
+- Terms: https://apiindonesia.id/terms/
+- Support and data questions: hello@apiindonesia.id
+
+What the package sends: tool calls and their arguments go to the hosted server at `mcp.apiindonesia.id`. No telemetry, no local storage. See the privacy policy for retention and third-party sharing.
 
 ## License
 
