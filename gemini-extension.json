@@ -1,0 +1,11 @@
+{
+  "name": "api-indonesia",
+  "version": "1.0.0",
+  "description": "Indonesian public data for AI agents: regions and postal codes, holidays, prayer times, BMKG weather and earthquakes, schools, hospitals, exchange rates, validation tools. 84 read-only tools from official sources.",
+  "mcpServers": {
+    "api-indonesia": {
+      "httpUrl": "https://mcp.apiindonesia.id/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
