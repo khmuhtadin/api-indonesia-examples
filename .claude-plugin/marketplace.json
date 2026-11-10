@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "api-indonesia-mcp",
+  "description": "API Indonesia: Indonesian public data for AI agents, as a Claude Code plugin that connects to the remote API Indonesia MCP server.",
+  "owner": {
+    "name": "Khaisa Studio",
+    "url": "https://apiindonesia.id",
+    "email": "hello@apiindonesia.id"
+  },
+  "plugins": [
+    {
+      "name": "api-indonesia",
+      "source": "./",
+      "description": "Indonesian public data for AI agents: regions down to villages, postal codes, holidays, prayer times, BMKG weather and earthquakes, schools, hospitals, exchange rates, minimum wage, halal/BPOM, trademarks and more.",
+      "category": "data",
+      "tags": ["mcp", "indonesia", "public-data", "wilayah", "kodepos", "bmkg"],
+      "homepage": "https://apiindonesia.id"
+    }
+  ]
+}
