@@ -38,6 +38,24 @@ Disclosure:
 - The key is read from `API_INDONESIA_KEY` in your Hermes profile `.env` and sent as an `Authorization: Bearer` header. The package has no local code, runs no shell commands and stores nothing.
 - All tools are read-only lookups (data queries, format checks and calculators). None of them change anything in your API Indonesia account.
 
+### Install in Kiro
+
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=api-indonesia&config=%7B%22url%22%3A%22https%3A%2F%2Fmcp.apiindonesia.id%2Fmcp%22%7D)
+
+Or add it to `.kiro/settings/mcp.json` and sign in when Kiro asks:
+
+```json
+{ "mcpServers": { "api-indonesia": { "url": "https://mcp.apiindonesia.id/mcp" } } }
+```
+
+### Install in Cline
+
+```bash
+cline mcp install api-indonesia --transport http https://mcp.apiindonesia.id/mcp
+```
+
+Cline opens an API Indonesia sign-in page to approve access, and the entry is also in the Cline marketplace (cline/marketplace#437).
+
 ## What's in the API
 
 30 API products, including:
