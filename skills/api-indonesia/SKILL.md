@@ -16,12 +16,12 @@ API Indonesia is one REST API (plus a remote MCP server) for Indonesian public d
 
 You cannot create a key yourself. Ask the human to:
 
-1. Sign up at https://dashboard.apiindonesia.id/register (3,000 free credits, no card).
+1. Sign up at https://dashboard.apiindonesia.id/register (free signup credits, no card).
 2. Open **API Keys**, create a key and give it to you. Keys start with `aip_live_`.
 
 Treat the key as a secret. Do not echo it back, commit it, or write it to a shared file. Prefer an environment variable such as `API_INDONESIA_KEY`.
 
-Pricing: a successful request costs 2 credits (Rp2). Failed requests (bad input, upstream error) are not billed.
+Pricing: successful requests spend credits (current rates: https://apiindonesia.id/#harga). Failed requests (bad input, upstream error) are not billed.
 
 ## 2. Pick a way to call it
 

@@ -43,7 +43,7 @@ Portable packages stay disabled until you enable them. In Hermes Desktop you can
 Disclosure:
 
 - Every tool call, with its arguments, goes to API Indonesia's hosted server (`mcp.apiindonesia.id`). The tool list is served by that server at runtime.
-- Each successful call spends 2 credits (Rp2) from the account that owns the key. Failed calls are free.
+- Each successful call spends credits from the account that owns the key. Failed calls are free.
 - The key is read from `API_INDONESIA_KEY` in your Hermes profile `.env` and sent as an `Authorization: Bearer` header. The package has no local code, runs no shell commands and stores nothing.
 - All tools are read-only lookups (data queries, format checks and calculators). None of them change anything in your API Indonesia account.
 
@@ -82,7 +82,7 @@ The full endpoint list is in the [OpenAPI spec](https://apiindonesia.id/openapi.
 
 ## Pricing
 
-There is no monthly free tier. New accounts get a one-time 3,000 credit signup bonus (1 credit = Rp1), no credit card needed. A successful data request costs 2 credits (Rp2); failed requests are not charged.
+API Indonesia is pay per successful call with prepaid credits. New accounts get free signup credits, no credit card needed, and failed requests are not charged. Current rates are on https://apiindonesia.id/#harga.
 
 ## Authentication
 

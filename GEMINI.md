@@ -6,7 +6,7 @@ All 84 tools are read-only. Ask for the specific record you need (a place, a dat
 
 ## Cost
 
-A successful request costs 2 credits (Rp2). Failed requests are not charged. A new account gets 3,000 free credits after email verification, with no card. Say what a request cost once, when the work is done, and do not run paid lookups the question does not need.
+Successful requests spend credits (current rates: https://apiindonesia.id/#harga). Failed requests are not charged. A new account gets free signup credits after email verification, with no card. Say what a request cost once, when the work is done, and do not run paid lookups the question does not need.
 
 ## Signing in
 
